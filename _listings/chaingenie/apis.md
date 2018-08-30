@@ -13,8 +13,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28902-api-
 x-kinRank: "7"
 x-alexaRank: ""
 tags: ChainGenie
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-29"
+modified: "2018-08-29"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/apis.md
 specificationVersion: "0.14"
 apis:
@@ -151,6 +151,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/ethledgersign-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/ethledgersign-post-openapi.md
+- name: ChainGenie = DLT + Blockchain + Magic - Get document status with file
+  x-api-slug: ethledgerdocstatus-post
+  description: Review the document status - existence, hash, block info, signatories,
+    routing to users and details
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28902-api-chaingenie-com.jpg
+  humanURL: http://chaingenie.com
+  baseURL: https://api.chaingenie.com//api/v1
+  tags: Blockchain
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/ethledgerdocstatus-post-openapi.md
 - name: ChainGenie = DLT + Blockchain + Magic - Check document exists on blockchain
   x-api-slug: ethledgerexistsdoc-post
   description: Check if your documents exists in the eth blockchain
@@ -232,6 +243,16 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/ethledgerposthash-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/ethledgerposthash-post-openapi.md
+- name: ChainGenie = DLT + Blockchain + Magic - Check hash exists on blockchain
+  x-api-slug: ethledgerexistshash-post
+  description: Check if your hash exists in the eth blockchain
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28902-api-chaingenie-com.jpg
+  humanURL: http://chaingenie.com
+  baseURL: https://api.chaingenie.com//api/v1
+  tags: Blockchain
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/ethledgerexistshash-post-openapi.md
 - name: ChainGenie = DLT + Blockchain + Magic - Write message to blockchain
   x-api-slug: ethledgerpoststr-post
   description: Post string hash into eth chain for POE (proof of existence)
@@ -244,6 +265,16 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/ethledgerpoststr-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/ethledgerpoststr-post-openapi.md
+- name: ChainGenie = DLT + Blockchain + Magic - Check message exists on blockchain
+  x-api-slug: ethledgerexistsstr-post
+  description: Check if your string exists in the eth blockchain
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28902-api-chaingenie-com.jpg
+  humanURL: http://chaingenie.com
+  baseURL: https://api.chaingenie.com//api/v1
+  tags: Blockchain
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/ethledgerexistsstr-post-openapi.md
 - name: ChainGenie = DLT + Blockchain + Magic - Document transactions
   x-api-slug: ethledgergettrans-get
   description: Displays all transactions connected to this project / smart contract
@@ -270,6 +301,32 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/tradechaincreatetradecontract-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/tradechaincreatetradecontract-post-openapi.md
+- name: ChainGenie = DLT + Blockchain + Magic - Remove Listing (by Seller)
+  x-api-slug: tradechainconfirmabort-post
+  description: "Remove Listing (by Seller)<br/>\r\n- Seller cancels the market trade
+    after listing but before bid/buy<br/>\r\n- Escrow from seller is returned back
+    to the seller<br/>\r\n- End transaction state = Smart contract is rendered inactive<br/>"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28902-api-chaingenie-com.jpg
+  humanURL: http://chaingenie.com
+  baseURL: https://api.chaingenie.com//api/v1
+  tags: Blockchain
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/tradechainconfirmabort-post-openapi.md
+- name: ChainGenie = DLT + Blockchain + Magic - Bid / buy listed item (by Buyer)
+  x-api-slug: tradechainconfirmpurchase-post
+  description: "Bid / buy the item listed on the marketplace: <br/>\r\n- Buyer confirms
+    interest in buying<br/>\r\n- Escrow from buyer added to value of contract<br/>\r\n-
+    Invoice document is created with all details using invoice template<br/>\r\n-
+    Invoice is added IPFS and invoice hash into blockchain<br/>\r\n- End transaction
+    state = Trade is actively locked between the seller and buyer<br/>"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28902-api-chaingenie-com.jpg
+  humanURL: http://chaingenie.com
+  baseURL: https://api.chaingenie.com//api/v1
+  tags: Blockchain
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/tradechainconfirmpurchase-post-openapi.md
 - name: ChainGenie = DLT + Blockchain + Magic - Refund buyer and stop trade (by Seller)
   x-api-slug: tradechainconfirmrefund-post
   description: "Seller can cancel the market trade after bid/buy by refunding the
@@ -285,6 +342,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/tradechainconfirmrefund-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/tradechainconfirmrefund-post-openapi.md
+- name: ChainGenie = DLT + Blockchain + Magic - Delivery of item confirmed (by Buyer)
+  x-api-slug: tradechainconfirmreceived-post
+  description: "Delivery of item confirmed by the buyer \r\n-Escrow is fully sent
+    to seller\r\n- End transaction state = TRANSACTION COMPLETE"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28902-api-chaingenie-com.jpg
+  humanURL: http://chaingenie.com
+  baseURL: https://api.chaingenie.com//api/v1
+  tags: Blockchain
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/tradechainconfirmreceived-post-openapi.md
 - name: ChainGenie = DLT + Blockchain + Magic - Get contract details & state
   x-api-slug: tradechaingetstateofcontract-post
   description: "Get contract details & state\n- Provide full information including\n
@@ -300,6 +368,30 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/tradechaingetstateofcontract-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/tradechaingetstateofcontract-post-openapi.md
+- name: ChainGenie = DLT + Blockchain + Magic - Get contract escrow details
+  x-api-slug: tradechaingetfundslockedincontract-post
+  description: "Get contract escrow details -\n- Retrieves full information including
+    but not limited to\n - Escrow amount in contract\n - Contract state \n - Buyer
+    & Seller information\n - Links to contract / invoice documents\n - and other contract
+    / sale specific information"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28902-api-chaingenie-com.jpg
+  humanURL: http://chaingenie.com
+  baseURL: https://api.chaingenie.com//api/v1
+  tags: Blockchain
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/tradechaingetfundslockedincontract-post-openapi.md
+- name: ChainGenie = DLT + Blockchain + Magic - Get seller information
+  x-api-slug: tradechainwhoisseller-post
+  description: Get full information about the seller by providing the contract id.  Response
+    will also include some contract details.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28902-api-chaingenie-com.jpg
+  humanURL: http://chaingenie.com
+  baseURL: https://api.chaingenie.com//api/v1
+  tags: Blockchain
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/tradechainwhoisseller-post-openapi.md
 - name: ChainGenie = DLT + Blockchain + Magic - Get buyer information
   x-api-slug: tradechainwhoisbuyer-post
   description: Get full information about the seller by providing the contract id.  Response
@@ -349,6 +441,16 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/basicfnsgetaccountbalance-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/basicfnsgetaccountbalance-post-openapi.md
+- name: ChainGenie = DLT + Blockchain + Magic - Write document to IPFS
+  x-api-slug: ethledgeripfsadd-post
+  description: Post the document into ipfs for safekeep!
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28902-api-chaingenie-com.jpg
+  humanURL: http://chaingenie.com
+  baseURL: https://api.chaingenie.com//api/v1
+  tags: Blockchain
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/chaingenie/master/_listings/chaingenie/ethledgeripfsadd-post-openapi.md
 - name: ChainGenie = DLT + Blockchain + Magic - Retrieve document from IPFS
   x-api-slug: ethledgeripfsget-post
   description: Retrieve the document stream from IPFS node

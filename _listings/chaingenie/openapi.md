@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: ChainGenie
 x-complete: 1
@@ -777,4 +776,3 @@ paths:
       - Document
       - From
       - IPFS
----
